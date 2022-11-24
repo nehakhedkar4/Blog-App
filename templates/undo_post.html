@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+   
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Are you want to Undo deleetd Post ?</p>
+    <button>Undo</button>
+    <a href="{% url 'user_profile' %}">Cancel</a>
+    
+</form>
+
+{% endblock content %}
