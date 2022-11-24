@@ -140,5 +140,8 @@ def undo_post(request):
 
 # LOG OUT BY USER
 def user_logout(request):
+    print("jh")
     logout(request)
     return render(request,'logout.html')
+
+
