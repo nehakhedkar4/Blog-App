@@ -138,7 +138,7 @@ def undo_post(request):
         return HttpResponse('post undo')
     return redirect('/user_profile/')
 
-# LOG OUT USER
+# LOG OUT BY USER
 def user_logout(request):
     logout(request)
     return render(request,'logout.html')
