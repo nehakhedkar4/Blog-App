@@ -20,6 +20,7 @@
             <!-- <h6> <i class="fa-regular fa-user"></i> {{p.blog_user}}</h6> -->
             <h3 class="display-18 fw-bold" id="title">{{p.title}}</h3>
             <p id="content">{{p.content}}</p>
+            <p>{{p.timestamp | timesince}}</p>
         </div>
         {% endfor %}
     </div>
